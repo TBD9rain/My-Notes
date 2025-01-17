@@ -1,4 +1,9 @@
+This repository consists of tool guides and application insights.
+
+
 # Table of Content
+
+***Guides***:
 
 |Title                                                                  |Description                                |
 |:---                                                                   |:---                                       |
@@ -9,4 +14,11 @@
 |[Lattice Diamond Preference](./guide/lattice_diamond_preference.md)   |preference command summary for Diamond     |
 |[Lattice Radiant Constraint](./guide/lattice_radiant_constraint.md)   |constraint command summary for Radiant     |
 |[HDL Simulation Scheduling](./guide/hdl_sim_scheduling.md)            |HDL simulation Scheduling semantics        |
+
+***Insights***:
+
+|Title                      |Description            |
+|:---                       |:---                   |
+|[CRC](./insight/crc.md)    |CRC application notes  |
+
 
