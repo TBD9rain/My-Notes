@@ -1,12 +1,12 @@
 # Table of Content
 
-|Title                                                          |Description                                |
-|:---                                                           |:---                                       |
-|[Vim](./vim_editing.md)                                        |editing commands in Vim                    |
-|[Git](./git.md)                                                |manual for version controlling with Git    |
-|[Markdown](./markdown.md)                                      |frequently used grammars in Markdown       |
-|[Project Dev](./pj_dev.md)                                     |tips for project development               |
-|[Lattice Diamond Preference](./lattice_diamond_preference.md)  |preference command summary for Diamond     |
-|[Lattice Radiant Constraint](./lattice_radiant_constraint.md)  |constraint command summary for Radiant     |
-|[HDL Simulation Scheduling](./hdl_sim_scheduling.md)           |HDL simulation Scheduling semantics        |
+|Title                                                                  |Description                                |
+|:---                                                                   |:---                                       |
+|[Vim](./guide/vim_editing.md)                                         |editing commands in Vim                    |
+|[Git](./guide/git.md)                                                 |manual for version controlling with Git    |
+|[Markdown](./guide/markdown.md)                                       |frequently used grammars in Markdown       |
+|[Project Dev](./guide/pj_dev.md)                                      |tips for project development               |
+|[Lattice Diamond Preference](./guide/lattice_diamond_preference.md)   |preference command summary for Diamond     |
+|[Lattice Radiant Constraint](./guide/lattice_radiant_constraint.md)   |constraint command summary for Radiant     |
+|[HDL Simulation Scheduling](./guide/hdl_sim_scheduling.md)            |HDL simulation Scheduling semantics        |
 
