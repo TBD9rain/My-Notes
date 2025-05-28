@@ -17,8 +17,9 @@ This repository consists of tool guides and application insights.
 
 ***Insights***:
 
-|Title                      |Description            |
-|:---                       |:---                   |
-|[CRC](./insight/crc.md)    |CRC application notes  |
+|Title                                      |Description                            |
+|:---                                       |:---                                   |
+|[CRC](./insight/crc.md)                    |CRC application notes                  |
+|[Integer Division](./insight/int_div.md)   |integer division for digital circuits  |
 
 
