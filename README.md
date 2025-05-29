@@ -1,20 +1,20 @@
-This repository consists of tool guides and application insights.
+This repository consists of general notes and application insights.
 
 
 # Table of Content
 
-***Guides***:
+***General***:
 
 |Title                                                                  |Description                                |
 |:---                                                                   |:---                                       |
-|[Git](./guide/git.md)                                                  |manual for version controlling with Git    |
-|[HDL Simulation Scheduling](./guide/hdl_sim_scheduling.md)             |HDL simulation Scheduling semantics        |
-|[Lattice Diamond Preference](./guide/lattice_diamond_preference.md)    |preference command summary for Diamond     |
-|[Lattice Radiant Constraint](./guide/lattice_radiant_constraint.md)    |constraint command summary for Radiant     |
-|[Markdown](./guide/markdown.md)                                        |frequently used grammars in Markdown       |
-|[Project Dev](./guide/pj_dev.md)                                       |tips for project development               |
-|[SystemVerilog](./guide/systemverilog.md)                              |SystemVerilog practical guide              |
-|[Vim](./guide/vim_editing.md)                                          |editing commands in Vim                    |
+|[Git](./general/git.md)                                                |manual for version controlling with Git    |
+|[HDL Simulation Scheduling](./general/hdl_sim_scheduling.md)           |HDL simulation Scheduling semantics        |
+|[Lattice Diamond Preference](./general/lattice_diamond_preference.md)  |preference command summary for Diamond     |
+|[Lattice Radiant Constraint](./general/lattice_radiant_constraint.md)  |constraint command summary for Radiant     |
+|[Markdown](./general/markdown.md)                                      |frequently used grammars in Markdown       |
+|[Project Dev](./general/pj_dev.md)                                     |tips for project development               |
+|[SystemVerilog](./general/systemverilog.md)                            |SystemVerilog syntax summary               |
+|[Vim](./general/vim_editing.md)                                        |editing commands in Vim                    |
 
 ***Insights***:
 
