@@ -32,9 +32,9 @@ For example, the generator polynomial of a 5-bit CRC is
 $x^5 + x^4+ x^3 + x^2 + 1$,
 which equals to
 $1 \cdot x^5 + 1 \cdot x^4 + 1 \cdot x^3 + 1 \cdot x^2 + 0 \cdot x^1 + 1$,
-represents the binary divisor $11\_1101$.
+represents the binary divisor $\text{6'b11\_1101}$.
 
-When the 16-bit raw data is $\text{9AC7}$ in hexadecimal, which represents binary dividend $1001\_1010\_1100\_0111$,
+When the 16-bit raw data is $\text{0x9AC7}$ in hexadecimal, which represents binary dividend $\text{16'b1001\_1010\_1100\_0111}$,
 the modulo-2 division is computed as following:
 
 ```
@@ -74,7 +74,7 @@ the modulo-2 division is computed as following:
 0000000000000000 11000
 ```
 
-The remainder is $1\_1000$ in binary, which is the CRC computation result.
+The remainder is $\text{5'b1\_1000}$ in binary, which is the CRC computation result.
 
 
 # Specification
@@ -116,6 +116,11 @@ The implementation is left shifting and MSB first.
 The `crcIn` is the previous CRC remainder or the initial value.
 
 There are also multi-bit implementation for acceleration.
+
+If the CRC calculation is data LSB first,
+then it is implemented with **right shifting** and is called **"LSB"** or **"little endian style"**.
+On the other hand, for data MSB first,
+the CRC implementation is based on **left shifting** and is called **"MSB"** or **"big endian style"**.
 
 
 # Application
