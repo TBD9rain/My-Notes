@@ -906,7 +906,7 @@ Assertion statements consist of:
 - `cover`
 - `restrict`
 
-Assertions are divided into concurrent and immediate assertions.
+Assertions are divided into immediate and concurrent assertions.
 Immediate assertions are executed like a statement in a procedural block.
 Immediate assertions are primarily intended to be used with simulation.
 There is no immediate restrict assertion statement.
@@ -932,7 +932,7 @@ Immediate `assume` may behave as immediate `assert`.
 
 System tasks like `$error`:
 - `$fatal`
-- `warning`
+- `$warning`
 - `$info`
 
 `<assertion_name>:` provides name displaying by hierarchical name of the scope.
@@ -941,7 +941,7 @@ System tasks like `$error`:
 In a deferred immediate assertion,
 the statements are delayed until later in the time step.
 ```
-{assert | assume | cover} {# 0 | final}(expression)
+{assert | assume | cover} {# 0 | final} (expression)
     [<pass_statements>]
 [else]
     [<fail_statements>]
@@ -1373,9 +1373,9 @@ covergroup <covergroup_name> [<coverage_evnet>];
 endgroup
 ```
 
-If a `<clocking_event>` is specified,
+If a `<coverage_event>` is specified,
 it defines the event at which coverage points are sampled.
-If a `<clocking_event>` is not specified,
+If a `<coverage_event>` is not specified,
 users must procedurally trigger the coverage sampling via the built-in `sample()` method.
 `sample()` method could be overridden.
 
