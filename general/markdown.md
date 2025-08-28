@@ -113,9 +113,15 @@ Use `- [x]` to create a completed task item.
 
 # Link
 
-`link` includes URL links and relative links in **github**. 
-For relative links, `/` corresponds to root directory of repository,
+`link` includes URL links, relative file links, and heading links in **github**. 
+For relative file links, `/` corresponds to root directory of repository,
 `./` and `../` correspond to current directory and parent directory.
+
+For heading links, the link paths must be process as:
+- Start with **one** `#` and heading text without space
+- Convert uppercase to lowercase
+- Replace spaces with `-`
+- Remove punctuation marks.
 
 Use `<hyperlink>` to make hyperlinks clickable.
 <https://github.com/TBD9rain/>
@@ -127,6 +133,8 @@ Use `[link_name](link_path "hovering_name")` to insert a hyperlink, where `hover
 [Github](https://github.com/TBD9rain/)
 
 [README](./README.md "go to README")
+
+[List](#task-list)
 
 Texts in `link` element can be decorated:
 - <https://markdown.com.cn/>
