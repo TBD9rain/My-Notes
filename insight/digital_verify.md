@@ -6,6 +6,9 @@
 
 ### SystemVerilog
 
+
+#### Local Parameter
+
 `localparam` definitions are not allowed in the parameter port in a class definition.
 
 For example, the following codes cause an error report in QuestaSim:
@@ -20,6 +23,7 @@ class TestEnv #(
 
 endclass
 ```
+
 They should be replaced with:
 ```systemverilog
 class TestEnv #(
@@ -44,4 +48,13 @@ class TestEnv #(
 
 endclass
 ```
+
+
+#### UVM Test Class
+
+UVM test class definition with parameters will cause it not be registered in factory.
+Consequently, test run can not be started due to test class not found.
+
+Use parameters in definition for classes below UVM test.
+
 
