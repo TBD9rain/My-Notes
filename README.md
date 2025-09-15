@@ -18,9 +18,11 @@ This repository consists of general notes and application insights.
 
 ***Insights***:
 
-|Title                                      |Description                            |
-|:---                                       |:---                                   |
-|[CRC](./insight/crc.md)                    |CRC application notes                  |
-|[Integer Division](./insight/int_div.md)   |integer division for digital circuits  |
+|Title                                          |Description                            |
+|:---                                           |:---                                   |
+|[CRC](./insight/crc.md)                        |CRC application notes                  |
+|[Digital Verify](./insight/digital_verify.md)  |digital circuits verification tips     |
+|[FPGA Onboard Debug](./insight/fpga_debug.md)  |FPGA onboard debug tips                |
+|[Integer Division](./insight/int_div.md)       |integer division for digital circuits  |
 
 
