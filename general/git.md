@@ -668,53 +668,6 @@ git mergetool --tool-help
 ```
 
 
-## Stash Current Changes
-
-To temporarily save current staging area and working directory for later recovery:
-```
-git stash [<option>] [push]
-```
-After this command,
-the staging area and working directory will be the same as the last commit.
-To stash staging area and not clean staging area add option `--keep-index`.
-To stash untracked files add option `-u` or `--include-untracked`,
-and `-a` or `--all` to stash ignored files as well.
-
-To show stash list:
-```
-git stash list
-```
-To show change summary in a stash:
-```
-git stash show [<stash>]
-```
-
-To load a specific stash:
-```
-git stash apply [--index] [<stash>]
-```
-If `<stash>` is not given, the last stash will be loaded.
-**The `<stash>` in powershell should be simple number or embraced by single quotation marks.**
-
-Option `--index` is recommended.
-**Without `--index` the changes in stage area will appear in working area.**
-
-To remove a specific stash from stash list:
-```
-git stash drop [<stash>]
-```
-
-To load a stash and remove it from stash list:
-```
-git stash pop [--index] [<stash>]
-```
-
-To create a new branch based on current modified cached area and working directory:
-```
-git stash branch <branch> [<stash>]
-```
-
-
 ## Rebase
 
 To rebase all changes between current commit **to (not with)** the commit:
@@ -780,6 +733,91 @@ which will lose the commits after the `<commit>`.***
 To undo this command, `reflog` is needed.
 For more info, check
 [git reflog](https://git-scm.com/search/results?search=git-reflog).
+
+
+# Local Concurrent Development Technique
+
+
+## Stash Current Changes
+
+To temporarily save current staging area and working directory for later recovery:
+```
+git stash [<option>] [push] [-- <path>]
+```
+After this command,
+the staging area and working directory will be the same as the last commit.
+The modifications will be added to a stash commit.
+If `-- <path>` is given,
+only the specified path will be stashed.
+To stash staging area and not clean staging area add option `--keep-index`.
+To stash untracked files add option `-u` or `--include-untracked`,
+and `-a` or `--all` to stash ignored files as well.
+
+To show stash list:
+```
+git stash list
+```
+To show change summary in a stash:
+```
+git stash show [<stash>]
+```
+
+To load a specific stash:
+```
+git stash apply [--index] [<stash>]
+```
+If `<stash>` is not given, the last stash will be loaded.
+**The `<stash>` in powershell should be simple number or embraced by single quotation marks.**
+
+Option `--index` is recommended.
+**Without `--index` the changes in stage area will appear in working area.**
+
+To remove a specific stash from stash list:
+```
+git stash drop [<stash>]
+```
+
+To load a stash and remove it from stash list:
+```
+git stash pop [--index] [<stash>]
+```
+
+To create a new branch based on current modified cached area and working directory:
+```
+git stash branch <branch> [<stash>]
+```
+
+
+## Worktree
+
+Git supports multiple worktree management, allowing to checkout more than one branch at a time.
+With `git worktree add` a new worktree is associated with the repository,
+which is a new directory contains all information as original repository.
+In the new worktree,
+there are also additional metadata that differentiates that worktree from others in the same repository.
+
+This new worktree is called a "linked worktree" as opposed to the "main worktree" prepared by `git init` or `git clone`.
+A repository has one main worktree (if it’s not a bare repository) and zero or more linked worktrees.
+
+To list all worktree:
+```
+git worktree list
+```
+
+To add a new worktree:
+```
+git worktree add [-b <new-branch>] <path> [<commit> | <branch>]
+```
+
+To remove a worktree:
+```
+git worktree remove <worktree>
+```
+
+To prune worktree information:
+```
+git worktree prune
+```
 
 
 # Remote Repository
